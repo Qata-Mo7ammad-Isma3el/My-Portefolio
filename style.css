@@ -1053,6 +1053,7 @@ footer .footer-top nav {
     justify-content: center;
     flex-wrap: wrap;
     gap: 2rem;
+    margin-top: 30px;
 }
 footer .footer-top nav a {
     font-size: clamp(18px, 2.4vw, 22px);
@@ -1102,7 +1103,7 @@ footer .footer-bottom .social-icons a i {
 }
 footer .footer-bottom .social-icons span {
     font-weight: 700;
-    font-size: 16px;
+    font-size: 15px;
     padding-left: 0;
 }
 footer.contact-me-info > p {
@@ -1231,6 +1232,13 @@ both	        Apply only in a range
     .footer-bottom {
         width: 340px;
     }
+    footer .footer-bottom .social-icons {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        padding-left: 12px;
+    }
     footer .footer-bottom .social-icons a span {
         font-size: 20px;
     }
@@ -1295,11 +1303,18 @@ both	        Apply only in a range
     .footer-bottom {
         width: 400px;
     }
+    footer .footer-bottom .social-icons {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        padding-right: 80px;
+    }
     footer .footer-bottom .social-icons a span {
-        font-size: 25px;
+        font-size: 18px;
     }
     footer .footer-bottom .social-icons a i {
-        font-size: 28px;
+        font-size: 25px;
     }
     footer.contact-me-info > p {
         font-size: 15px;
@@ -1359,8 +1374,15 @@ both	        Apply only in a range
     .footer-bottom {
         width: 400px;
     }
+    footer .footer-bottom .social-icons {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        padding-left: 80px;
+    }
     footer .footer-bottom .social-icons a span {
-        font-size: 25px;
+        font-size: 20px;
     }
     footer .footer-bottom .social-icons a i {
         font-size: 30px;
@@ -1415,8 +1437,15 @@ both	        Apply only in a range
     .footer-bottom {
         width: 400px;
     }
+    footer .footer-bottom .social-icons {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        padding-left: 12px;
+    }
     footer .footer-bottom .social-icons a span {
-        font-size: 25px;
+        font-size: 22px;
     }
     footer .footer-bottom .social-icons a i {
         font-size: 30px;
@@ -1465,8 +1494,15 @@ both	        Apply only in a range
     .footer-bottom {
         width: 400px;
     }
+    footer .footer-bottom .social-icons {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        padding-left: 12px;
+    }
     footer .footer-bottom .social-icons a span {
-        font-size: 25px;
+        font-size: 19px;
     }
     footer .footer-bottom .social-icons a i {
         font-size: 30px;
@@ -1491,6 +1527,13 @@ both	        Apply only in a range
         width: 350px;
         height: 300px;
     }
+    footer .footer-bottom .social-icons {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        padding-left: 30px;
+    }
     .contact-title .quote {
         font-size: 28px;
     }
@@ -1509,5 +1552,12 @@ both	        Apply only in a range
     }
     .contact-title .quote {
         font-size: 30px;
+    }
+    footer .footer-bottom .social-icons {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        padding-left: 30px;
     }
 }
