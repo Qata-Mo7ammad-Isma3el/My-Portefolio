@@ -1065,9 +1065,13 @@ footer .footer-bottom {
     gap: 18px;
 }
 footer .footer-bottom .social-icons {
-    align-items: flex-start;
     text-align: left;
     gap: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding-left: 12px;
 }
 footer .footer-bottom .social-icons a {
     display: inline-flex;
