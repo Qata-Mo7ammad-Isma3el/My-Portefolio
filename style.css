@@ -465,6 +465,42 @@ body {
 }
 
 /* responsive grid */
+/* ==== Project Filters ==== */
+.project-filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    justify-content: center;
+    margin: 30px auto;
+    max-width: 900px;
+}
+
+.filter-btn {
+    padding: 10px 24px;
+    background: var(--card);
+    color: var(--text);
+    border: 2px solid var(--card-border);
+    border-radius: 25px;
+    cursor: pointer;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 14px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.filter-btn:hover {
+    background: var(--hover-bg);
+    border-color: var(--brand);
+    color: var(--white);
+    transform: translateY(-2px);
+}
+
+.filter-btn.active {
+    background: linear-gradient(135deg, var(--brand), var(--brand2));
+    color: var(--white);
+    border-color: var(--brand);
+}
+
 .projects-body {
     display: grid;
     gap: 20px;
@@ -473,6 +509,14 @@ body {
     margin: 0 auto 60px;
     padding: 0 4px;
     max-width: 100%;
+}
+
+.projects-body > * {
+    transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.projects-body > *.hidden {
+    display: none;
 }
 
 .projects-body > * {
@@ -2035,6 +2079,10 @@ both	        Apply only in a range
     align-items: center;
 }
 
+.nav-links > div {
+    list-style: none;
+}
+
 .nav-links a {
     position: relative;
     font-size: 15px;
@@ -2194,6 +2242,12 @@ both	        Apply only in a range
 }
 
 @media (max-width: 768px) {
+    /* Hide navbar completely on mobile */
+    .nav {
+        display: none;
+    }
+    
+    /* Skills Section */
     .skills-section {
         padding: 40px 15px;
     }
@@ -2209,6 +2263,16 @@ both	        Apply only in a range
     
     .skill-badges img {
         height: 24px;
+    }
+    
+    /* Project Filters */
+    .project-filters {
+        gap: 8px;
+    }
+    
+    .filter-btn {
+        padding: 8px 16px;
+        font-size: 12px;
     }
 }
 

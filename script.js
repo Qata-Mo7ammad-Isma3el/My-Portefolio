@@ -1,4 +1,36 @@
 document.addEventListener('DOMContentLoaded', () => {
+    // ==== Project Category Filtering ====
+    const filterButtons = document.querySelectorAll('.filter-btn');
+    const projectCards = document.querySelectorAll('.projects-body .project-card');
+
+    console.log('Filter buttons found:', filterButtons.length);
+    console.log('Project cards found:', projectCards.length);
+
+    filterButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            const filter = button.getAttribute('data-filter');
+            console.log('Filter clicked:', filter);
+
+            // Update active button
+            filterButtons.forEach(btn => btn.classList.remove('active'));
+            button.classList.add('active');
+
+            // Filter projects
+            projectCards.forEach(card => {
+                const category = card.getAttribute('data-category');
+                console.log('Card category:', category, 'Filter:', filter);
+
+                if (filter === 'all' || category === filter) {
+                    card.style.display = 'flex';
+                    card.classList.remove('hidden');
+                } else {
+                    card.style.display = 'none';
+                    card.classList.add('hidden');
+                }
+            });
+        });
+    });
+
     // Add animation classes
     const animateElements = () => {
         // Animate elements when they come into view
@@ -6,20 +38,21 @@ document.addEventListener('DOMContentLoaded', () => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
                     entry.target.classList.add('animate-fade-up');
+                    entry.target.style.opacity = '1';
                     observer.unobserve(entry.target);
                 }
             });
         }, { threshold: 0.1 });
 
-        // Observe elements
-        document.querySelectorAll('.skill-category, .projects-body > *, .my-info, .my-photo, .contact-form').forEach(el => {
+        // Observe elements (excluding project cards since they're filtered)
+        document.querySelectorAll('.skill-category, .my-info, .my-photo, .contact-form').forEach(el => {
             el.style.opacity = '0';
             observer.observe(el);
         });
 
         // Special animations for the navigation
         const nav = document.querySelector('.nav');
-        nav.classList.add('animate-fade-down');
+        if (nav) nav.classList.add('animate-fade-down');
     };
 
     // Run animations
@@ -27,7 +60,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Theme toggling
     const themeToggle = document.getElementById('theme-toggle');
     const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)');
-    
+
     // Initialize theme
     const savedTheme = localStorage.getItem('theme');
     if (savedTheme) {
@@ -39,23 +72,23 @@ document.addEventListener('DOMContentLoaded', () => {
     themeToggle.addEventListener('click', () => {
         const currentTheme = document.documentElement.getAttribute('data-theme');
         const newTheme = currentTheme === 'light' ? 'dark' : 'light';
-        
+
         document.documentElement.setAttribute('data-theme', newTheme);
         localStorage.setItem('theme', newTheme);
     });
     const form = document.querySelector('.contact-form');
     const inputs = form.querySelectorAll('input, textarea');
-    
+
     // Show success toast
     function showToast(message, type = 'success') {
         const toast = document.createElement('div');
         toast.className = `toast ${type}`;
         toast.textContent = message;
         document.body.appendChild(toast);
-        
+
         // Trigger animation
         setTimeout(() => toast.classList.add('show'), 100);
-        
+
         // Remove toast after 3 seconds
         setTimeout(() => {
             toast.classList.remove('show');
@@ -88,7 +121,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Form submission
     form.addEventListener('submit', async (e) => {
         e.preventDefault();
-        
+
         // Basic validation
         let isValid = true;
         inputs.forEach(input => {

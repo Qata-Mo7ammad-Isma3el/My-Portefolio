@@ -154,8 +154,19 @@
             <p id="projects">My Projects</p>
             <p class="projects-subtitle">Explore my work in AI, Machine Learning, IoT, and Web Development</p>
         </div>
+        
+        <div class="project-filters">
+            <button class="filter-btn active" data-filter="all">All Projects</button>
+            <button class="filter-btn" data-filter="ai-ml">AI/ML</button>
+            <button class="filter-btn" data-filter="iot">IoT</button>
+            <button class="filter-btn" data-filter="web">Web</button>
+            <button class="filter-btn" data-filter="backend">Backend</button>
+            <button class="filter-btn" data-filter="education">Education</button>
+            <button class="filter-btn" data-filter="data-science">Data Science</button>
+        </div>
+        
         <section class="projects-body">
-            <a class="Dentelligence-System project-card" href="https://github.com/Qata-Mo7ammad-Isma3el/Dentelligence-System.git"
+            <a class="Dentelligence-System project-card" data-category="ai-ml" href="https://github.com/Qata-Mo7ammad-Isma3el/Dentelligence-System.git"
                 target="_blank" rel="noopener noreferrer">
                 <div class="project-overlay">
                     <h3>Dentelligence System</h3>
@@ -163,14 +174,14 @@
                     <span class="project-tag">AI/ML</span>
                 </div>
             </a>
-            <a class="D3aj-Buggy project-card" href="https://github.com/Qata-Mo7ammad-Isma3el/D3aj-Buggy.git" target="_blank" rel="noopener noreferrer">
+            <a class="D3aj-Buggy project-card" data-category="iot" href="https://github.com/Qata-Mo7ammad-Isma3el/D3aj-Buggy.git" target="_blank" rel="noopener noreferrer">
                 <div class="project-overlay">
                     <h3>D3aj Buggy</h3>
                     <p>Arduino-based robotic buggy with automated navigation and obstacle avoidance</p>
                     <span class="project-tag">IoT</span>
                 </div>
             </a>
-            <a class="chat-with-pdf project-card" href="https://github.com/Qata-Mo7ammad-Isma3el/chatbot-with-pdf.git"
+            <a class="chat-with-pdf project-card" data-category="ai-ml" href="https://github.com/Qata-Mo7ammad-Isma3el/chatbot-with-pdf.git"
                 target="_blank" rel="noopener noreferrer">
                 <div class="project-overlay">
                     <h3>Chat with PDF</h3>
@@ -178,7 +189,7 @@
                     <span class="project-tag">AI/ML</span>
                 </div>
             </a>
-            <a class="AI-modelthon project-card" href="https://github.com/Qata-Mo7ammad-Isma3el/AI-modelthon-2025.git"
+            <a class="AI-modelthon project-card" data-category="ai-ml" href="https://github.com/Qata-Mo7ammad-Isma3el/AI-modelthon-2025.git"
                 target="_blank" rel="noopener noreferrer">
                 <div class="project-overlay">
                     <h3>AI Modelthon 2025</h3>
@@ -186,7 +197,7 @@
                     <span class="project-tag">Competition</span>
                 </div>
             </a>
-            <a class="Arduino-Course project-card" href="https://github.com/Qata-Mo7ammad-Isma3el/Arduino-Course-Content.git"
+            <a class="Arduino-Course project-card" data-category="education" href="https://github.com/Qata-Mo7ammad-Isma3el/Arduino-Course-Content.git"
                 target="_blank" rel="noopener noreferrer">
                 <div class="project-overlay">
                     <h3>Arduino Course</h3>
@@ -194,7 +205,7 @@
                     <span class="project-tag">Education</span>
                 </div>
             </a>
-            <a class="flower-classifier project-card" href="https://github.com/Qata-Mo7ammad-Isma3el/flower-classifier.git"
+            <a class="flower-classifier project-card" data-category="ai-ml" href="https://github.com/Qata-Mo7ammad-Isma3el/flower-classifier.git"
                 target="_blank" rel="noopener noreferrer">
                 <div class="project-overlay">
                     <h3>Flower Classifier</h3>
@@ -202,7 +213,7 @@
                     <span class="project-tag">AI/ML</span>
                 </div>
             </a>
-            <a class="Hotel-Bookings-prediction project-card"
+            <a class="Hotel-Bookings-prediction project-card" data-category="data-science"
                 href="https://github.com/Qata-Mo7ammad-Isma3el/Hotel-Bookings-prediction.git" target="_blank" rel="noopener noreferrer">
                 <div class="project-overlay">
                     <h3>Hotel Bookings Prediction</h3>
@@ -210,7 +221,7 @@
                     <span class="project-tag">Data Science</span>
                 </div>
             </a>
-            <a class="Arduino-Codes project-card" href="https://github.com/Qata-Mo7ammad-Isma3el/Arduino-Codes.git"
+            <a class="Arduino-Codes project-card" data-category="iot" href="https://github.com/Qata-Mo7ammad-Isma3el/Arduino-Codes.git"
                 target="_blank" rel="noopener noreferrer">
                 <div class="project-overlay">
                     <h3>Arduino Code Library</h3>
@@ -218,70 +229,70 @@
                     <span class="project-tag">IoT</span>
                 </div>
             </a>
-            <a class="Git-Github project-card" href="https://github.com/Qata-Mo7ammad-Isma3el/Git-Github.git" target="_blank" rel="noopener noreferrer">
+            <a class="Git-Github project-card" data-category="education" href="https://github.com/Qata-Mo7ammad-Isma3el/Git-Github.git" target="_blank" rel="noopener noreferrer">
                 <div class="project-overlay">
                     <h3>Git & GitHub Guide</h3>
                     <p>Comprehensive cheat sheet for version control commands and best practices</p>
                     <span class="project-tag">Development</span>
                 </div>
             </a>
-            <a class="Portfolio-Website project-card" href="https://github.com/Qata-Mo7ammad-Isma3el/My-Portefolio.git" target="_blank" rel="noopener noreferrer">
+            <a class="Portfolio-Website project-card" data-category="web" href="https://github.com/Qata-Mo7ammad-Isma3el/My-Portefolio.git" target="_blank" rel="noopener noreferrer">
                 <div class="project-overlay">
                     <h3>Portfolio Website</h3>
                     <p>Personal portfolio website showcasing skills, projects, and professional journey</p>
                     <span class="project-tag">Web</span>
                 </div>
             </a>
-            <a class="Magnetor-assistant project-card" href="https://github.com/Qata-Mo7ammad-Isma3el/Magnetor-assistant-project-v1.0.git" target="_blank" rel="noopener noreferrer">
+            <a class="Magnetor-assistant project-card" data-category="ai-ml" href="https://github.com/Qata-Mo7ammad-Isma3el/Magnetor-assistant-project-v1.0.git" target="_blank" rel="noopener noreferrer">
                 <div class="project-overlay">
                     <h3>Magnetor Assistant</h3>
                     <p>AI-powered virtual assistant with natural language processing and task automation</p>
                     <span class="project-tag">AI/ML</span>
                 </div>
             </a>
-            <a class="Course-Enrollment project-card" href="https://github.com/Qata-Mo7ammad-Isma3el/Course-Enrollment-Api.git" target="_blank" rel="noopener noreferrer">
+            <a class="Course-Enrollment project-card" data-category="backend" href="https://github.com/Qata-Mo7ammad-Isma3el/Course-Enrollment-Api.git" target="_blank" rel="noopener noreferrer">
                 <div class="project-overlay">
                     <h3>Course Enrollment API</h3>
                     <p>RESTful API for managing course enrollment with authentication and database integration</p>
                     <span class="project-tag">Backend</span>
                 </div>
             </a>
-            <a class="Business-Card-Agent project-card" href="https://github.com/Qata-Mo7ammad-Isma3el/Business-Card-Management-Agent.git" target="_blank" rel="noopener noreferrer">
+            <a class="Business-Card-Agent project-card" data-category="ai-ml" href="https://github.com/Qata-Mo7ammad-Isma3el/Business-Card-Management-Agent.git" target="_blank" rel="noopener noreferrer">
                 <div class="project-overlay">
                     <h3>Business Card Agent</h3>
                     <p>AI agent for extracting and managing business card information using OCR</p>
                     <span class="project-tag">AI/ML</span>
                 </div>
             </a>
-            <a class="IEEE-Submission-Form project-card" href="https://github.com/Qata-Mo7ammad-Isma3el/IEEE-RAS-BAU-Team-Submission-Form.git" target="_blank" rel="noopener noreferrer">
+            <a class="IEEE-Submission-Form project-card" data-category="web" href="https://github.com/Qata-Mo7ammad-Isma3el/IEEE-RAS-BAU-Team-Submission-Form.git" target="_blank" rel="noopener noreferrer">
                 <div class="project-overlay">
                     <h3>IEEE Submission Form</h3>
                     <p>Web-based submission form for IEEE RAS BAU team project submissions</p>
                     <span class="project-tag">Web</span>
                 </div>
             </a>
-            <a class="Blog-App project-card" href="https://github.com/Qata-Mo7ammad-Isma3el/Blog-App-FastAPI.git" target="_blank" rel="noopener noreferrer">
+            <a class="Blog-App project-card" data-category="web" href="https://github.com/Qata-Mo7ammad-Isma3el/Blog-App-FastAPI.git" target="_blank" rel="noopener noreferrer">
                 <div class="project-overlay">
                     <h3>Blog App FastAPI</h3>
                     <p>Full-featured blog application built with FastAPI, PostgreSQL, and modern web technologies</p>
                     <span class="project-tag">Full Stack</span>
                 </div>
             </a>
-            <a class="My-Postgres project-card" href="https://github.com/Qata-Mo7ammad-Isma3el/My-Postgres.git" target="_blank" rel="noopener noreferrer">
+            <a class="My-Postgres project-card" data-category="education" href="https://github.com/Qata-Mo7ammad-Isma3el/My-Postgres.git" target="_blank" rel="noopener noreferrer">
                 <div class="project-overlay">
                     <h3>PostgreSQL Learning</h3>
                     <p>Comprehensive collection of PostgreSQL queries, schemas, and database design patterns</p>
                     <span class="project-tag">Database</span>
                 </div>
             </a>
-            <a class="Python-OOP project-card" href="https://github.com/Qata-Mo7ammad-Isma3el/Python-OOP.git" target="_blank" rel="noopener noreferrer">
+            <a class="Python-OOP project-card" data-category="education" href="https://github.com/Qata-Mo7ammad-Isma3el/Python-OOP.git" target="_blank" rel="noopener noreferrer">
                 <div class="project-overlay">
                     <h3>Python OOP</h3>
                     <p>Object-oriented programming concepts and design patterns implemented in Python</p>
                     <span class="project-tag">Education</span>
                 </div>
             </a>
-            <a class="My-FastAPI-Course project-card" href="https://github.com/Qata-Mo7ammad-Isma3el/My-FastAPI-Course.git" target="_blank" rel="noopener noreferrer">
+            <a class="My-FastAPI-Course project-card" data-category="education" href="https://github.com/Qata-Mo7ammad-Isma3el/My-FastAPI-Course.git" target="_blank" rel="noopener noreferrer">
                 <div class="project-overlay">
                     <h3>FastAPI Course</h3>
                     <p>Complete FastAPI course materials covering REST APIs, databases, and authentication</p>
@@ -404,6 +415,7 @@
             </footer>
         </div>
     </div>
+    <script src="script.js"></script>
 </body>
 
 </html>
