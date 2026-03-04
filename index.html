@@ -1,421 +1,913 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="en" data-theme="dark">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;600;700&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <title>Q-M-I</title>
-    <link rel="icon" href="static/icon.png">
+    <title>Mohammad Ismail — AI Engineer</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700;800&family=Outfit:wght@300;400;500;600;700;800;900&family=Syne:wght@400;500;600;700;800&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet" />
+    <link rel="icon" href="./static/icon.jpg" style="border-radius: 50%;" />
+    <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
-    <div class="container">
-        <nav class="nav">
-            <div class="nav-links">
-                <div class="home-link">
-                    <a href="#home">Home</a>
-                </div>
-                <div class="pro-link">
-                    <a href="#projects">Projects</a>
-                </div>
-                <div class="contact-link">
-                    <a href="#contact">Contact</a>
-                </div>
-            </div>
-            <div class="my-links">
-                <a href="https://www.linkedin.com/in/mohammad-ismail-11719a260/" target="_blank" aria-label="LinkedIn">
-                    <i class="fa-brands fa-linkedin"></i>
-                </a>
-                <a href="https://github.com/Qata-Mo7ammad-Isma3el" target="_blank" aria-label="GitHub">
-                    <i class="fa-brands fa-square-github"></i>
-                </a>
-                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=moh40398@gmail.com" target="_blank"
-                    aria-label="Email">
-                    <i class="fa-solid fa-square-envelope"></i>
-                </a>
-            </div>
-        </nav>
-        <section class="home-body">
-            <div class="my-info">
-                <h1 id="home" class="my-name">Mohammad Ismail</h1>
-                <p class="my-summary">
-                    I am Mohammad, a recent Artificial Intelligence graduate passionate about applying machine learning
-                    and deep learning to real-world problems. As an <b style="color: #62ba1b;">AI Engineer</b> and 
-                    <b style="color: #62ba1b;">Backend Developer</b>, I specialize in building intelligent applications 
-                    using Python, FastAPI, and automation tools like n8n, LangChain, and LangGraph. I enjoy exploring 
-                    new technologies and continuously learning to create innovative solutions.
-                </p>
-                <div class="go-to-button">
-                    <a href="#projects">Let's Get Started &gt;</a>
-                </div>
-            </div>
-            <figure class="my-photo">
-                <div class="flip-card">
-                    <div class="flip-card-inner">
-                        <div class="flip-side front">
-                            <!-- FRONT IMAGE -->
-                            <img src="static/my_photo.jpg" alt="Front">
-                        </div>
-                        <div class="flip-side back">
-                            <!-- BACK IMAGE -->
-                            <img src="static/my_photo_flip.jpg" alt="Back">
-                        </div>
-                    </div>
-                </div>
-            </figure>
-        </section>
-        
-        <section class="skills-section">
-            <div class="skills-header">
-                <h2 class="skills-title">Tech Stack & Tools</h2>
-                <p class="skills-subtitle">Technologies I work with and enjoy</p>
-            </div>
-            
-            <div class="skills-categories">
-                <div class="skill-category">
-                    <h3>Languages</h3>
-                    <div class="skill-badges">
-                        <img src="https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54" alt="Python">
-                        <!-- <img src="https://img.shields.io/badge/c%23-%23239120.svg?style=for-the-badge&logo=csharp&logoColor=white" alt="C#"> -->
-                        <img src="https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E" alt="JavaScript">
-                        <img src="https://img.shields.io/badge/c++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white" alt="C++">
-                        <img src="https://img.shields.io/badge/c-%2300599C.svg?style=for-the-badge&logo=c&logoColor=white" alt="C">
-                        <img src="https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white" alt="Java">
-                    </div>
-                </div>
-                
-                <div class="skill-category">
-                    <h3>Web Development</h3>
-                    <div class="skill-badges">
-                        <img src="https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5">
-                        <img src="https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3">
-                        <img src="https://img.shields.io/badge/FastAPI-005571?style=for-the-badge&logo=fastapi" alt="FastAPI">
-                        <!-- <img src="https://img.shields.io/badge/.NET-5C2D91?style=for-the-badge&logo=.net&logoColor=white" alt=".NET"> -->
-                        <img src="https://img.shields.io/badge/flask-%23000.svg?style=for-the-badge&logo=flask&logoColor=white" alt="Flask">
-                        <img src="https://img.shields.io/badge/bootstrap-%238511FA.svg?style=for-the-badge&logo=bootstrap&logoColor=white" alt="Bootstrap">
-                    </div>
-                </div>
-                
-                <div class="skill-category">
-                    <h3>AI & Data Science</h3>
-                    <div class="skill-badges">
-                        <img src="https://img.shields.io/badge/TensorFlow-%23FF6F00.svg?style=for-the-badge&logo=TensorFlow&logoColor=white" alt="TensorFlow">
-                        <img src="https://img.shields.io/badge/PyTorch-%23EE4C2C.svg?style=for-the-badge&logo=PyTorch&logoColor=white" alt="PyTorch">
-                        <img src="https://img.shields.io/badge/Keras-%23D00000.svg?style=for-the-badge&logo=Keras&logoColor=white" alt="Keras">
-                        <img src="https://img.shields.io/badge/scikit--learn-%23F7931E.svg?style=for-the-badge&logo=scikit-learn&logoColor=white" alt="scikit-learn">
-                        <img src="https://img.shields.io/badge/opencv-%23white.svg?style=for-the-badge&logo=opencv&logoColor=white" alt="OpenCV">
-                        <img src="https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white" alt="Pandas">
-                        <img src="https://img.shields.io/badge/numpy-%23013243.svg?style=for-the-badge&logo=numpy&logoColor=white" alt="NumPy">
-                        <img src="https://img.shields.io/badge/Matplotlib-%23ffffff.svg?style=for-the-badge&logo=Matplotlib&logoColor=black" alt="Matplotlib">
-                        <img src="https://img.shields.io/badge/Plotly-%233F4F75.svg?style=for-the-badge&logo=plotly&logoColor=white" alt="Plotly">
-                        <img src="https://img.shields.io/badge/SciPy-%230C55A5.svg?style=for-the-badge&logo=scipy&logoColor=%white" alt="Scipy">
-                    </div>
-                </div>
-                
-                <div class="skill-category">
-                    <h3>Databases & DevOps</h3>
-                    <div class="skill-badges">
-                        <img src="https://img.shields.io/badge/postgres-%23316192.svg?style=for-the-badge&logo=postgresql&logoColor=white" alt="PostgreSQL">
-                        <img src="https://img.shields.io/badge/mysql-4479A1.svg?style=for-the-badge&logo=mysql&logoColor=white" alt="MySQL">
-                        <img src="https://img.shields.io/badge/sqlite-%2307405e.svg?style=for-the-badge&logo=sqlite&logoColor=white" alt="SQLite">
-                        <img src="https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white" alt="Docker">
-                        <img src="https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white" alt="Git">
-                        <img src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white" alt="GitHub">
-                    </div>
-                </div>
-                
-                <div class="skill-category">
-                    <h3>IoT & Hardware</h3>
-                    <div class="skill-badges">
-                        <img src="https://img.shields.io/badge/-Arduino-00979D?style=for-the-badge&logo=Arduino&logoColor=white" alt="Arduino">
-                        <img src="https://img.shields.io/badge/-Raspberry_Pi-C51A4A?style=for-the-badge&logo=Raspberry-Pi" alt="Raspberry Pi">
-                    </div>
-                </div>
-                
-                <div class="skill-category">
-                    <h3>Tools & Others</h3>
-                    <div class="skill-badges">
-                        <img src="https://img.shields.io/badge/n8n-EA4B71?style=for-the-badge&logo=n8n&logoColor=white" alt="n8n">
-                        <img src="https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white" alt="Postman">
-                        <img src="https://img.shields.io/badge/-Swagger-%23Clojure?style=for-the-badge&logo=swagger&logoColor=white" alt="Swagger">
-                        <img src="https://img.shields.io/badge/markdown-%23000000.svg?style=for-the-badge&logo=markdown&logoColor=white" alt="Markdown">
-                    </div>
-                </div>
-            </div>
-        </section>
-        
-        <div class="projects-title">
-            <p id="projects">My Projects</p>
-            <p class="projects-subtitle">Explore my work in AI, Machine Learning, IoT, and Web Development</p>
+    <!-- Scroll progress -->
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <!-- Custom cursor -->
+    <div class="cursor-dot" id="cursorDot"></div>
+    <div class="cursor-follower" id="cursorFollower"></div>
+
+    <!-- Grain overlay -->
+    <div class="grain"></div>
+
+    <!-- Cursor glow -->
+    <div class="cursor-glow" id="cursorGlow"></div>
+
+    <!-- Navigation -->
+    <nav class="nav" id="nav">
+        <a href="#hero" class="nav-logo">M<span class="accent">.</span>I</a>
+        <div class="nav-center">
+            <a href="#hero" class="nav-link" data-text="Home">Home</a>
+            <a href="#about" class="nav-link" data-text="About">About</a>
+            <a href="#skills" class="nav-link" data-text="Skills">Skills</a>
+            <a href="#projects" class="nav-link" data-text="Projects">Projects</a>
+            <a href="#contact" class="nav-link" data-text="Contact">Contact</a>
         </div>
-        
-        <div class="project-filters">
-            <button class="filter-btn active" data-filter="all">All Projects</button>
-            <button class="filter-btn" data-filter="ai-ml">AI/ML</button>
-            <button class="filter-btn" data-filter="iot">IoT</button>
-            <button class="filter-btn" data-filter="web">Web</button>
-            <button class="filter-btn" data-filter="backend">Backend</button>
-            <button class="filter-btn" data-filter="education">Education</button>
-            <button class="filter-btn" data-filter="data-science">Data Science</button>
-        </div>
-        
-        <section class="projects-body">
-            <a class="Dentelligence-System project-card" data-category="ai-ml" href="https://github.com/Qata-Mo7ammad-Isma3el/Dentelligence-System.git"
-                target="_blank" rel="noopener noreferrer">
-                <div class="project-overlay">
-                    <h3>Dentelligence System</h3>
-                    <p>AI-powered dental diagnosis using deep learning for accurate condition analysis</p>
-                    <span class="project-tag">AI/ML</span>
-                </div>
-            </a>
-            <a class="D3aj-Buggy project-card" data-category="iot" href="https://github.com/Qata-Mo7ammad-Isma3el/D3aj-Buggy.git" target="_blank" rel="noopener noreferrer">
-                <div class="project-overlay">
-                    <h3>D3aj Buggy</h3>
-                    <p>Arduino-based robotic buggy with automated navigation and obstacle avoidance</p>
-                    <span class="project-tag">IoT</span>
-                </div>
-            </a>
-            <a class="chat-with-pdf project-card" data-category="ai-ml" href="https://github.com/Qata-Mo7ammad-Isma3el/chatbot-with-pdf.git"
-                target="_blank" rel="noopener noreferrer">
-                <div class="project-overlay">
-                    <h3>Chat with PDF</h3>
-                    <p>AI chatbot that extracts and answers questions from PDF documents using NLP</p>
-                    <span class="project-tag">AI/ML</span>
-                </div>
-            </a>
-            <a class="AI-modelthon project-card" data-category="ai-ml" href="https://github.com/Qata-Mo7ammad-Isma3el/AI-modelthon-2025.git"
-                target="_blank" rel="noopener noreferrer">
-                <div class="project-overlay">
-                    <h3>AI Modelthon 2025</h3>
-                    <p>Innovative AI models developed for the 2025 competition showcasing ML solutions</p>
-                    <span class="project-tag">Competition</span>
-                </div>
-            </a>
-            <a class="Arduino-Course project-card" data-category="education" href="https://github.com/Qata-Mo7ammad-Isma3el/Arduino-Course-Content.git"
-                target="_blank" rel="noopener noreferrer">
-                <div class="project-overlay">
-                    <h3>Arduino Course</h3>
-                    <p>Comprehensive course materials covering electronics, sensors, and IoT projects</p>
-                    <span class="project-tag">Education</span>
-                </div>
-            </a>
-            <a class="flower-classifier project-card" data-category="ai-ml" href="https://github.com/Qata-Mo7ammad-Isma3el/flower-classifier.git"
-                target="_blank" rel="noopener noreferrer">
-                <div class="project-overlay">
-                    <h3>Flower Classifier</h3>
-                    <p>Deep learning model for identifying flower species from images with high accuracy</p>
-                    <span class="project-tag">AI/ML</span>
-                </div>
-            </a>
-            <a class="Hotel-Bookings-prediction project-card" data-category="data-science"
-                href="https://github.com/Qata-Mo7ammad-Isma3el/Hotel-Bookings-prediction.git" target="_blank" rel="noopener noreferrer">
-                <div class="project-overlay">
-                    <h3>Hotel Bookings Prediction</h3>
-                    <p>ML model predicting hotel booking cancellations using historical data patterns</p>
-                    <span class="project-tag">Data Science</span>
-                </div>
-            </a>
-            <a class="Arduino-Codes project-card" data-category="iot" href="https://github.com/Qata-Mo7ammad-Isma3el/Arduino-Codes.git"
-                target="_blank" rel="noopener noreferrer">
-                <div class="project-overlay">
-                    <h3>Arduino Code Library</h3>
-                    <p>Collection of Arduino projects and reusable code for various applications</p>
-                    <span class="project-tag">IoT</span>
-                </div>
-            </a>
-            <a class="Git-Github project-card" data-category="education" href="https://github.com/Qata-Mo7ammad-Isma3el/Git-Github.git" target="_blank" rel="noopener noreferrer">
-                <div class="project-overlay">
-                    <h3>Git & GitHub Guide</h3>
-                    <p>Comprehensive cheat sheet for version control commands and best practices</p>
-                    <span class="project-tag">Development</span>
-                </div>
-            </a>
-            <a class="Portfolio-Website project-card" data-category="web" href="https://github.com/Qata-Mo7ammad-Isma3el/My-Portefolio.git" target="_blank" rel="noopener noreferrer">
-                <div class="project-overlay">
-                    <h3>Portfolio Website</h3>
-                    <p>Personal portfolio website showcasing skills, projects, and professional journey</p>
-                    <span class="project-tag">Web</span>
-                </div>
-            </a>
-            <a class="Magnetor-assistant project-card" data-category="ai-ml" href="https://github.com/Qata-Mo7ammad-Isma3el/Magnetor-assistant-project-v1.0.git" target="_blank" rel="noopener noreferrer">
-                <div class="project-overlay">
-                    <h3>Magnetor Assistant</h3>
-                    <p>AI-powered virtual assistant with natural language processing and task automation</p>
-                    <span class="project-tag">AI/ML</span>
-                </div>
-            </a>
-            <a class="Course-Enrollment project-card" data-category="backend" href="https://github.com/Qata-Mo7ammad-Isma3el/Course-Enrollment-Api.git" target="_blank" rel="noopener noreferrer">
-                <div class="project-overlay">
-                    <h3>Course Enrollment API</h3>
-                    <p>RESTful API for managing course enrollment with authentication and database integration</p>
-                    <span class="project-tag">Backend</span>
-                </div>
-            </a>
-            <a class="Business-Card-Agent project-card" data-category="ai-ml" href="https://github.com/Qata-Mo7ammad-Isma3el/Business-Card-Management-Agent.git" target="_blank" rel="noopener noreferrer">
-                <div class="project-overlay">
-                    <h3>Business Card Agent</h3>
-                    <p>AI agent for extracting and managing business card information using OCR</p>
-                    <span class="project-tag">AI/ML</span>
-                </div>
-            </a>
-            <a class="IEEE-Submission-Form project-card" data-category="web" href="https://github.com/Qata-Mo7ammad-Isma3el/IEEE-RAS-BAU-Team-Submission-Form.git" target="_blank" rel="noopener noreferrer">
-                <div class="project-overlay">
-                    <h3>IEEE Submission Form</h3>
-                    <p>Web-based submission form for IEEE RAS BAU team project submissions</p>
-                    <span class="project-tag">Web</span>
-                </div>
-            </a>
-            <a class="Blog-App project-card" data-category="web" href="https://github.com/Qata-Mo7ammad-Isma3el/Blog-App-FastAPI.git" target="_blank" rel="noopener noreferrer">
-                <div class="project-overlay">
-                    <h3>Blog App FastAPI</h3>
-                    <p>Full-featured blog application built with FastAPI, PostgreSQL, and modern web technologies</p>
-                    <span class="project-tag">Full Stack</span>
-                </div>
-            </a>
-            <a class="My-Postgres project-card" data-category="education" href="https://github.com/Qata-Mo7ammad-Isma3el/My-Postgres.git" target="_blank" rel="noopener noreferrer">
-                <div class="project-overlay">
-                    <h3>PostgreSQL Learning</h3>
-                    <p>Comprehensive collection of PostgreSQL queries, schemas, and database design patterns</p>
-                    <span class="project-tag">Database</span>
-                </div>
-            </a>
-            <a class="Python-OOP project-card" data-category="education" href="https://github.com/Qata-Mo7ammad-Isma3el/Python-OOP.git" target="_blank" rel="noopener noreferrer">
-                <div class="project-overlay">
-                    <h3>Python OOP</h3>
-                    <p>Object-oriented programming concepts and design patterns implemented in Python</p>
-                    <span class="project-tag">Education</span>
-                </div>
-            </a>
-            <a class="My-FastAPI-Course project-card" data-category="education" href="https://github.com/Qata-Mo7ammad-Isma3el/My-FastAPI-Course.git" target="_blank" rel="noopener noreferrer">
-                <div class="project-overlay">
-                    <h3>FastAPI Course</h3>
-                    <p>Complete FastAPI course materials covering REST APIs, databases, and authentication</p>
-                    <span class="project-tag">Education</span>
-                </div>
-            </a>
-        </section>
-        <div class="contact-section" id="contact">
-            <div class="contact-header">
-                <h2 class="contact-title">Let's Work Together</h2>
-                <p class="contact-subtitle">Have a project in mind or want to collaborate? I'd love to hear from you!</p>
+        <div class="nav-actions">
+            <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+                <i class="fas fa-moon"></i>
+                <i class="fas fa-sun"></i>
+            </button>
+            <div class="nav-socials">
+                <a href="https://github.com/Qata-Mo7ammad-Isma3el" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/mohammad-ismail-11719a260/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
             </div>
-            
-            <div class="contact-container">
-                <div class="contact-info-section">
-                    <h3>Get in Touch</h3>
-                    <div class="contact-methods">
-                        <div class="contact-method">
-                            <div class="method-icon">
-                                <i class="fas fa-envelope"></i>
+        </div>
+        <button class="nav-hamburger" id="navHamburger" aria-label="Menu">
+            <span></span><span></span><span></span>
+        </button>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="#hero" class="mobile-link">Home</a>
+        <a href="#about" class="mobile-link">About</a>
+        <a href="#skills" class="mobile-link">Skills</a>
+        <a href="#projects" class="mobile-link">Projects</a>
+        <a href="#contact" class="mobile-link">Contact</a>
+        <div class="mobile-socials">
+            <a href="https://github.com/Qata-Mo7ammad-Isma3el" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/mohammad-ismail-11719a260/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a>
+            <a href="mailto:moh40398@gmail.com"><i class="fas fa-envelope"></i></a>
+        </div>
+    </div>
+
+    <main>
+        <!-- Hero -->
+        <section class="hero" id="hero">
+            <div class="hero-orb hero-orb-1"></div>
+            <div class="hero-orb hero-orb-2"></div>
+            <div class="hero-orb hero-orb-3"></div>
+            <div class="hero-content">
+                <div class="hero-text">
+                    <div class="hero-label reveal">
+                        <span class="label-line"></span>
+                        <span class="label-text">AI Engineer & Backend Developer</span>
+                    </div>
+                    <h1 class="hero-name" id="heroName">
+                        <span class="name-line" data-word="Mohammad">Mohammad</span>
+                        <span class="name-line name-outline" data-word="Ismail">Ismail<span class="blink">_</span></span>
+                    </h1>
+                    <p class="hero-desc reveal">Building intelligent systems at the intersection of machine learning, deep learning, and modern backend architecture.</p>
+                    <div class="hero-cta reveal">
+                        <a href="#projects" class="btn btn-primary">
+                            <span>View Projects</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                        <a href="#contact" class="btn btn-ghost">
+                            <span>Get in Touch</span>
+                        </a>
+                    </div>
+                    <div class="hero-stats reveal">
+                        <div class="stat">
+                            <span class="stat-number" data-count="39">0</span><span class="accent">+</span>
+                            <span class="stat-label">Projects</span>
+                        </div>
+                        <div class="stat-divider"></div>
+                        <div class="stat">
+                            <span class="stat-number" data-count="20">0</span><span class="accent">+</span>
+                            <span class="stat-label">Technologies</span>
+                        </div>
+                        <div class="stat-divider"></div>
+                        <div class="stat">
+                            <span class="stat-number" data-count="7">0</span><span class="accent">+</span>
+                            <span class="stat-label">Domains</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-visual reveal">
+                    <div class="photo-frame">
+                        <div class="photo-border"></div>
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                                <div class="flip-front">
+                                    <img src="static/my_photo.jpg" alt="Mohammad Ismail" />
+                                </div>
+                                <div class="flip-back">
+                                    <img src="static/my_photo_flip.png" alt="Mohammad Ismail" />
+                                </div>
                             </div>
-                            <div class="method-details">
+                        </div>
+                        <div class="photo-tag">
+                            <span class="tag-dot"></span>
+                            Available for work
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <div class="scroll-line"></div>
+                <span>Scroll</span>
+            </div>
+        </section>
+
+        <!-- About -->
+        <section class="about" id="about">
+            <div class="section-container">
+                <div class="section-header reveal">
+                    <span class="section-number">01</span>
+                    <h2 class="section-title">About<span class="accent">.</span></h2>
+                </div>
+                <div class="about-grid">
+                    <div class="about-text reveal">
+                        <p class="about-lead">A recent Artificial Intelligence graduate driven by an obsession with turning complex data into elegant, real-world solutions.</p>
+                        <p>I specialize in building intelligent applications using <strong>Python</strong>, <strong>FastAPI</strong>, and modern AI tooling like <strong>LangChain</strong>, <strong>LangGraph</strong>, and <strong>n8n</strong>. From deep learning models to automated workflows, I architect systems that think.</p>
+                        <p>When I'm not training models or building APIs, I'm exploring IoT, contributing to open source, and pushing the boundaries of what's possible with code.</p>
+                    </div>
+                    <div class="about-details reveal">
+                        <div class="detail-card">
+                            <div class="detail-icon"><i class="fas fa-brain"></i></div>
+                            <h3>AI/ML Engineering</h3>
+                            <p>Deep learning, NLP, computer vision, and predictive modeling</p>
+                        </div>
+                        <div class="detail-card">
+                            <div class="detail-icon"><i class="fas fa-server"></i></div>
+                            <h3>Backend Development</h3>
+                            <p>FastAPI, Flask, RESTful APIs, database architecture</p>
+                        </div>
+                        <div class="detail-card">
+                            <div class="detail-icon"><i class="fas fa-robot"></i></div>
+                            <h3>Automation</h3>
+                            <p>n8n, LangChain, LangGraph, intelligent workflows</p>
+                        </div>
+                        <div class="detail-card">
+                            <div class="detail-icon"><i class="fas fa-microchip"></i></div>
+                            <h3>IoT & Hardware</h3>
+                            <p>Arduino, Raspberry Pi, embedded systems</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills -->
+        <section class="skills" id="skills">
+            <div class="section-container">
+                <div class="section-header reveal">
+                    <span class="section-number">02</span>
+                    <h2 class="section-title">Tech Stack<span class="accent">.</span></h2>
+                    <p class="section-subtitle">Technologies I build with daily</p>
+                </div>
+                <div class="skills-grid">
+                    <div class="skill-group reveal">
+                        <h3 class="skill-group-title"><span class="accent">//</span> Languages</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">JavaScript</span>
+                            <span class="skill-tag">C++</span>
+                            <span class="skill-tag">C</span>
+                            <span class="skill-tag">C#</span>
+                            <span class="skill-tag">Java</span>
+                        </div>
+                    </div>
+                    <div class="skill-group reveal">
+                        <h3 class="skill-group-title"><span class="accent">//</span> AI & Data</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">TensorFlow</span>
+                            <span class="skill-tag">PyTorch</span>
+                            <span class="skill-tag">Keras</span>
+                            <span class="skill-tag">Scikit-learn</span>
+                            <span class="skill-tag">OpenCV</span>
+                            <span class="skill-tag">Pandas</span>
+                            <span class="skill-tag">NumPy</span>
+                            <span class="skill-tag">Matplotlib</span>
+                            <span class="skill-tag">Plotly</span>
+                            <span class="skill-tag">SciPy</span>
+                        </div>
+                    </div>
+                    <div class="skill-group reveal">
+                        <h3 class="skill-group-title"><span class="accent">//</span> Web & Backend</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">FastAPI</span>
+                            <span class="skill-tag">Flask</span>
+                            <span class="skill-tag">.Net</span>
+                            <span class="skill-tag">HTML5</span>
+                            <span class="skill-tag">CSS3</span>
+                            <span class="skill-tag">Bootstrap</span>
+                        </div>
+                    </div>
+                    <div class="skill-group reveal">
+                        <h3 class="skill-group-title"><span class="accent">//</span> Databases & DevOps</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">PostgreSQL</span>
+                            <span class="skill-tag">MySQL</span>
+                            <span class="skill-tag">SQLite</span>
+                            <span class="skill-tag">Docker</span>
+                            <span class="skill-tag">Git</span>
+                            <span class="skill-tag">GitHub</span>
+                        </div>
+                    </div>
+                    <div class="skill-group reveal">
+                        <h3 class="skill-group-title"><span class="accent">//</span> IoT & Hardware</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Arduino</span>
+                            <span class="skill-tag">Raspberry Pi</span>
+                        </div>
+                    </div>
+                    <div class="skill-group reveal">
+                        <h3 class="skill-group-title"><span class="accent">//</span> Tools</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">n8n</span>
+                            <span class="skill-tag">LangChain</span>
+                            <span class="skill-tag">LangGraph</span>
+                            <span class="skill-tag">Postman</span>
+                            <span class="skill-tag">Swagger</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects -->
+        <section class="projects" id="projects">
+            <div class="section-container">
+                <div class="section-header reveal">
+                    <span class="section-number">03</span>
+                    <h2 class="section-title">Projects<span class="accent">.</span></h2>
+                    <p class="section-subtitle">Selected work across AI, Backend, IoT, and more</p>
+                </div>
+                <div class="project-filters reveal">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="ai-ml">AI / ML</button>
+                    <button class="filter-btn" data-filter="automation">AI Agents</button>
+                    <button class="filter-btn" data-filter="web">Web</button>
+                    <button class="filter-btn" data-filter="backend">Backend</button>
+                    <button class="filter-btn" data-filter="iot">IoT</button>
+                    <button class="filter-btn" data-filter="data-science">Data Science</button>
+                    <button class="filter-btn" data-filter="education">Education</button>
+                </div>
+                <div class="projects-masonry">
+
+                    <!-- ═══════════════ AI / ML ═══════════════ -->
+
+                    <a class="project-card reveal" data-category="ai-ml" data-featured="true" href="https://github.com/Qata-Mo7ammad-Isma3el/Dentelligence-System" target="_blank" rel="noopener noreferrer">
+                        <div class="card-top">
+                            <div class="card-icon"><i class="fas fa-tooth"></i></div>
+                            <div class="card-arrow"><i class="fas fa-arrow-up-right-from-square"></i></div>
+                        </div>
+                        <h3 class="card-title">Dental X-Ray AI Diagnostic Pipeline</h3>
+                        <p class="card-desc">Panoramic dental X-ray analysis using DINO, U-Net, and YOLO for teeth detection, FDI enumeration, and abnormality identification</p>
+                        <div class="card-footer">
+                            <span class="card-tag">AI/ML</span>
+                            <span class="card-tag">Deep Learning</span>
+                            <span class="card-tag">Medical Imaging</span>
+                        </div>
+                    </a>
+
+                    <a class="project-card reveal" data-category="ai-ml" href="https://github.com/Qata-Mo7ammad-Isma3el/chat-with-pdf" target="_blank" rel="noopener noreferrer">
+                        <div class="card-top">
+                            <div class="card-icon"><i class="fas fa-file-pdf"></i></div>
+                            <div class="card-arrow"><i class="fas fa-arrow-up-right-from-square"></i></div>
+                        </div>
+                        <h3 class="card-title">Multilingual PDF Chatbot (RAG)</h3>
+                        <p class="card-desc">Arabic/English PDF Q&A chatbot using RAG with FAISS vector database, powered by Groq LLaMA-3 70B</p>
+                        <div class="card-footer">
+                            <span class="card-tag">AI/ML</span>
+                            <span class="card-tag">RAG</span>
+                            <span class="card-tag">NLP</span>
+                        </div>
+                    </a>
+
+                    <a class="project-card reveal" data-category="ai-ml" href="https://github.com/Qata-Mo7ammad-Isma3el/speech-reco-project" target="_blank" rel="noopener noreferrer">
+                        <div class="card-top">
+                            <div class="card-icon"><i class="fas fa-microphone"></i></div>
+                            <div class="card-arrow"><i class="fas fa-arrow-up-right-from-square"></i></div>
+                        </div>
+                        <h3 class="card-title">Arabic Speech Command Recognition</h3>
+                        <p class="card-desc">CNN-based Arabic speech recognition system for 40 voice command classes, trained on Kaggle dataset with custom evaluation</p>
+                        <div class="card-footer">
+                            <span class="card-tag">AI/ML</span>
+                            <span class="card-tag">Speech Recognition</span>
+                        </div>
+                    </a>
+
+                    <a class="project-card reveal" data-category="ai-ml" href="https://github.com/Qata-Mo7ammad-Isma3el/flower-classifier" target="_blank" rel="noopener noreferrer">
+                        <div class="card-top">
+                            <div class="card-icon"><i class="fas fa-seedling"></i></div>
+                            <div class="card-arrow"><i class="fas fa-arrow-up-right-from-square"></i></div>
+                        </div>
+                        <h3 class="card-title">Flower Species Image Classifier</h3>
+                        <p class="card-desc">Web app classifying flower images into 10 species using a TensorFlow/Keras CNN model with Flask interface</p>
+                        <div class="card-footer">
+                            <span class="card-tag">AI/ML</span>
+                            <span class="card-tag">Computer Vision</span>
+                        </div>
+                    </a>
+
+                    <a class="project-card reveal" data-category="ai-ml" href="https://github.com/Qata-Mo7ammad-Isma3el/gender-classifier" target="_blank" rel="noopener noreferrer">
+                        <div class="card-top">
+                            <div class="card-icon"><i class="fas fa-venus-mars"></i></div>
+                            <div class="card-arrow"><i class="fas fa-arrow-up-right-from-square"></i></div>
+                        </div>
+                        <h3 class="card-title">Real-Time Gender Classification</h3>
+                        <p class="card-desc">Flask web app for gender classification using OpenCV Haar Cascades for face detection, PCA Eigenfaces, and SVM classifier</p>
+                        <div class="card-footer">
+                            <span class="card-tag">AI/ML</span>
+                            <span class="card-tag">Computer Vision</span>
+                        </div>
+                    </a>
+
+                    <a class="project-card reveal" data-category="ai-ml" href="https://github.com/Qata-Mo7ammad-Isma3el/Chat-With-Groq-Using-CSharp" target="_blank" rel="noopener noreferrer">
+                        <div class="card-top">
+                            <div class="card-icon"><i class="fas fa-comments"></i></div>
+                            <div class="card-arrow"><i class="fas fa-arrow-up-right-from-square"></i></div>
+                        </div>
+                        <h3 class="card-title">Groq LLM Chat with Semantic Kernel</h3>
+                        <p class="card-desc">C# console app demonstrating Groq LLM API integration using Microsoft Semantic Kernel's OpenAI-compatible endpoint</p>
+                        <div class="card-footer">
+                            <span class="card-tag">AI/ML</span>
+                            <span class="card-tag">C#</span>
+                            <span class="card-tag">LLM</span>
+                        </div>
+                    </a>
+
+                    <!-- ═══════════════ AI AGENTS / AUTOMATION ═══════════════ -->
+
+                    <a class="project-card reveal" data-category="automation" data-featured="true" href="https://github.com/Qata-Mo7ammad-Isma3el/Magnetor-assistant-project-v1.0" target="_blank" rel="noopener noreferrer">
+                        <div class="card-top">
+                            <div class="card-icon"><i class="fas fa-wand-magic-sparkles"></i></div>
+                            <div class="card-arrow"><i class="fas fa-arrow-up-right-from-square"></i></div>
+                        </div>
+                        <h3 class="card-title">Magnetor — Meeting & Task AI Assistant</h3>
+                        <p class="card-desc">Production-ready Telegram assistant with Jordanian Arabic voice/text commands, Google Gemini AI, daily briefings, and auto status updates</p>
+                        <div class="card-footer">
+                            <span class="card-tag">AI Agent</span>
+                            <span class="card-tag">Telegram</span>
+                            <span class="card-tag">n8n</span>
+                        </div>
+                    </a>
+
+                    <a class="project-card reveal" data-category="automation" href="https://github.com/Qata-Mo7ammad-Isma3el/Business-Card-Management-Agent" target="_blank" rel="noopener noreferrer">
+                        <div class="card-top">
+                            <div class="card-icon"><i class="fas fa-id-card"></i></div>
+                            <div class="card-arrow"><i class="fas fa-arrow-up-right-from-square"></i></div>
+                        </div>
+                        <h3 class="card-title">AI Business Card Manager</h3>
+                        <p class="card-desc">Processes card images via Telegram using OCR (Tesseract + Qwen 2.5 VL), validates with n8n workflow, stores in Google Sheets</p>
+                        <div class="card-footer">
+                            <span class="card-tag">AI Agent</span>
+                            <span class="card-tag">OCR</span>
+                            <span class="card-tag">n8n</span>
+                        </div>
+                    </a>
+
+                    <a class="project-card reveal" data-category="automation" href="https://github.com/Qata-Mo7ammad-Isma3el/hoor-project-1" target="_blank" rel="noopener noreferrer">
+                        <div class="card-top">
+                            <div class="card-icon"><i class="fas fa-house-chimney"></i></div>
+                            <div class="card-arrow"><i class="fas fa-arrow-up-right-from-square"></i></div>
+                        </div>
+                        <h3 class="card-title">PropAI — WhatsApp Real Estate Broker</h3>
+                        <p class="card-desc">WhatsApp-based AI broker assistant for Jordan, helping customers search properties through Jordanian Arabic conversational forms</p>
+                        <div class="card-footer">
+                            <span class="card-tag">AI Agent</span>
+                            <span class="card-tag">WhatsApp</span>
+                            <span class="card-tag">Real Estate</span>
+                        </div>
+                    </a>
+
+                    <a class="project-card reveal" data-category="automation" href="https://github.com/Qata-Mo7ammad-Isma3el/Kensoftwaer-Dara-AI-Agent" target="_blank" rel="noopener noreferrer">
+                        <div class="card-top">
+                            <div class="card-icon"><i class="fas fa-building"></i></div>
+                            <div class="card-arrow"><i class="fas fa-arrow-up-right-from-square"></i></div>
+                        </div>
+                        <h3 class="card-title">Dara Real Estate AI Agent</h3>
+                        <p class="card-desc">WhatsApp AI agent for Dara Contracting — helps customers browse Saudi real estate projects in Saudi dialect Arabic via n8n workflows</p>
+                        <div class="card-footer">
+                            <span class="card-tag">AI Agent</span>
+                            <span class="card-tag">WhatsApp</span>
+                            <span class="card-tag">Real Estate</span>
+                        </div>
+                    </a>
+
+                    <a class="project-card reveal" data-category="automation" href="https://github.com/Qata-Mo7ammad-Isma3el/BAU-University-Calendar-Agent" target="_blank" rel="noopener noreferrer">
+                        <div class="card-top">
+                            <div class="card-icon"><i class="fas fa-calendar-days"></i></div>
+                            <div class="card-arrow"><i class="fas fa-arrow-up-right-from-square"></i></div>
+                        </div>
+                        <h3 class="card-title">University Calendar AI Chatbot</h3>
+                        <p class="card-desc">Chat-based AI agent for BAU university calendar info with web interface, n8n webhook backend, and persistent chat history</p>
+                        <div class="card-footer">
+                            <span class="card-tag">AI Agent</span>
+                            <span class="card-tag">Chatbot</span>
+                            <span class="card-tag">n8n</span>
+                        </div>
+                    </a>
+
+                    <a class="project-card reveal" data-category="automation" href="https://github.com/Qata-Mo7ammad-Isma3el/FastAPI-With-EvoAPI" target="_blank" rel="noopener noreferrer">
+                        <div class="card-top">
+                            <div class="card-icon"><i class="fab fa-whatsapp"></i></div>
+                            <div class="card-arrow"><i class="fas fa-arrow-up-right-from-square"></i></div>
+                        </div>
+                        <h3 class="card-title">WhatsApp AI Bot (Evolution API)</h3>
+                        <p class="card-desc">FastAPI-powered WhatsApp bot with Evolution API integration, webhook handling, message routing, and Groq AI responses</p>
+                        <div class="card-footer">
+                            <span class="card-tag">AI Agent</span>
+                            <span class="card-tag">WhatsApp</span>
+                            <span class="card-tag">FastAPI</span>
+                        </div>
+                    </a>
+
+                    <a class="project-card reveal" data-category="automation" href="https://github.com/Qata-Mo7ammad-Isma3el/Dentist-Voice-Assistant" target="_blank" rel="noopener noreferrer">
+                        <div class="card-top">
+                            <div class="card-icon"><i class="fas fa-headset"></i></div>
+                            <div class="card-arrow"><i class="fas fa-arrow-up-right-from-square"></i></div>
+                        </div>
+                        <h3 class="card-title">Dental Visit Voice Extractor</h3>
+                        <p class="card-desc">Web tool recording dentist voice notes (Arabic medical jargon) and extracting structured visit data using AI transcription</p>
+                        <div class="card-footer">
+                            <span class="card-tag">AI</span>
+                            <span class="card-tag">Healthcare</span>
+                            <span class="card-tag">Voice</span>
+                        </div>
+                    </a>
+
+                    <a class="project-card reveal" data-category="automation" href="https://github.com/Qata-Mo7ammad-Isma3el/kensoftwear" target="_blank" rel="noopener noreferrer">
+                        <div class="card-top">
+                            <div class="card-icon"><i class="fas fa-user-graduate"></i></div>
+                            <div class="card-arrow"><i class="fas fa-arrow-up-right-from-square"></i></div>
+                        </div>
+                        <h3 class="card-title">AI Course Planning Advisor</h3>
+                        <p class="card-desc">Intelligent academic course planning system with FastAPI, prerequisite checking, and AI-powered advising via OpenAI & Google GenAI</p>
+                        <div class="card-footer">
+                            <span class="card-tag">AI</span>
+                            <span class="card-tag">FastAPI</span>
+                            <span class="card-tag">Education</span>
+                        </div>
+                    </a>
+
+                    <div class="project-card reveal" data-category="automation">
+                        <div class="card-top">
+                            <div class="card-icon"><i class="fas fa-utensils"></i></div>
+                        </div>
+                        <h3 class="card-title">Golden Meal — Restaurant Ordering System</h3>
+                        <p class="card-desc">Restaurant ordering platform with n8n workflow automation for data entry, feedback handling, 45-minute status checks, and a digital menu</p>
+                        <div class="card-footer">
+                            <span class="card-tag">Automation</span>
+                            <span class="card-tag">n8n</span>
+                            <span class="card-tag">Web</span>
+                        </div>
+                    </div>
+
+                    <!-- ═══════════════ WEB / FULL-STACK ═══════════════ -->
+
+                    <a class="project-card reveal" data-category="web" data-featured="true" href="https://github.com/Qata-Mo7ammad-Isma3el/hoor-project-2" target="_blank" rel="noopener noreferrer">
+                        <div class="card-top">
+                            <div class="card-icon"><i class="fas fa-pizza-slice"></i></div>
+                            <div class="card-arrow"><i class="fas fa-arrow-up-right-from-square"></i></div>
+                        </div>
+                        <h3 class="card-title">NEXTGEN Pizza — Order Management System</h3>
+                        <p class="card-desc">Full-stack pizza order system with FastAPI backend, SQLite, vanilla JS frontend, n8n automation, WhatsApp AI agent, and Docker deployment</p>
+                        <div class="card-footer">
+                            <span class="card-tag">Full Stack</span>
+                            <span class="card-tag">FastAPI</span>
+                            <span class="card-tag">Automation</span>
+                        </div>
+                    </a>
+
+                    <a class="project-card reveal" data-category="web" href="https://github.com/Qata-Mo7ammad-Isma3el/Amman-IT-Companies-Directory" target="_blank" rel="noopener noreferrer">
+                        <div class="card-top">
+                            <div class="card-icon"><i class="fas fa-map-location-dot"></i></div>
+                            <div class="card-arrow"><i class="fas fa-arrow-up-right-from-square"></i></div>
+                        </div>
+                        <h3 class="card-title">Amman IT Companies Directory</h3>
+                        <p class="card-desc">Interactive web directory of IT companies across 14 business districts in Amman with Google Maps integration and statistics dashboard</p>
+                        <div class="card-footer">
+                            <span class="card-tag">Web</span>
+                            <span class="card-tag">Data</span>
+                            <span class="card-tag">Maps</span>
+                        </div>
+                    </a>
+
+                    <a class="project-card reveal" data-category="web" href="https://github.com/Qata-Mo7ammad-Isma3el/Blog-App-FastAPI" target="_blank" rel="noopener noreferrer">
+                        <div class="card-top">
+                            <div class="card-icon"><i class="fas fa-pen-nib"></i></div>
+                            <div class="card-arrow"><i class="fas fa-arrow-up-right-from-square"></i></div>
+                        </div>
+                        <h3 class="card-title">Full-Stack Blog Application</h3>
+                        <p class="card-desc">Blog app with CRUD operations, FastAPI REST API, SQLite database, and modern responsive vanilla JavaScript frontend</p>
+                        <div class="card-footer">
+                            <span class="card-tag">Full Stack</span>
+                            <span class="card-tag">FastAPI</span>
+                        </div>
+                    </a>
+
+                    <a class="project-card reveal" data-category="web" href="https://github.com/Qata-Mo7ammad-Isma3el/IEEE-RAS-BAU-Team-Submission-Form" target="_blank" rel="noopener noreferrer">
+                        <div class="card-top">
+                            <div class="card-icon"><i class="fas fa-file-lines"></i></div>
+                            <div class="card-arrow"><i class="fas fa-arrow-up-right-from-square"></i></div>
+                        </div>
+                        <h3 class="card-title">IEEE RAS Team Submission Portal</h3>
+                        <p class="card-desc">Robotics-themed "Join Our Team" form with GSAP animations, ScrollTrigger effects, and n8n webhook integration</p>
+                        <div class="card-footer">
+                            <span class="card-tag">Web</span>
+                            <span class="card-tag">UI/UX</span>
+                            <span class="card-tag">GSAP</span>
+                        </div>
+                    </a>
+
+                    <a class="project-card reveal" data-category="web" href="https://github.com/Qata-Mo7ammad-Isma3el/IEEE-SIGHT-Page" target="_blank" rel="noopener noreferrer">
+                        <div class="card-top">
+                            <div class="card-icon"><i class="fas fa-cloud-arrow-up"></i></div>
+                            <div class="card-arrow"><i class="fas fa-arrow-up-right-from-square"></i></div>
+                        </div>
+                        <h3 class="card-title">PDF Upload Portal</h3>
+                        <p class="card-desc">Modern dark-themed PDF uploader sending files to n8n webhook with animated grid background and sleek UI</p>
+                        <div class="card-footer">
+                            <span class="card-tag">Web</span>
+                            <span class="card-tag">Automation</span>
+                        </div>
+                    </a>
+
+                    <a class="project-card reveal" data-category="web" href="https://github.com/Qata-Mo7ammad-Isma3el/Ramadan-Countdown-Clock" target="_blank" rel="noopener noreferrer">
+                        <div class="card-top">
+                            <div class="card-icon"><i class="fas fa-moon"></i></div>
+                            <div class="card-arrow"><i class="fas fa-arrow-up-right-from-square"></i></div>
+                        </div>
+                        <h3 class="card-title">Ramadan Working Hours Countdown</h3>
+                        <p class="card-desc">Islamic-themed countdown clock with mosque silhouette, stars, gold & navy design, Arabic fonts, and animated timers</p>
+                        <div class="card-footer">
+                            <span class="card-tag">Web</span>
+                            <span class="card-tag">UI/UX</span>
+                        </div>
+                    </a>
+
+                    <!-- ═══════════════ BACKEND ═══════════════ -->
+
+                    <a class="project-card reveal" data-category="backend" href="https://github.com/Qata-Mo7ammad-Isma3el/Course-Enrollment-Api" target="_blank" rel="noopener noreferrer">
+                        <div class="card-top">
+                            <div class="card-icon"><i class="fas fa-graduation-cap"></i></div>
+                            <div class="card-arrow"><i class="fas fa-arrow-up-right-from-square"></i></div>
+                        </div>
+                        <h3 class="card-title">Course Enrollment Management System</h3>
+                        <p class="card-desc">Full-stack enrollment system with student, course & enrollment CRUD, tab-based frontend, toast notifications, and modal dialogs</p>
+                        <div class="card-footer">
+                            <span class="card-tag">Backend</span>
+                            <span class="card-tag">FastAPI</span>
+                            <span class="card-tag">PostgreSQL</span>
+                        </div>
+                    </a>
+
+                    <a class="project-card reveal" data-category="backend" href="https://github.com/Qata-Mo7ammad-Isma3el/Task-Management-DotNet-APIs" target="_blank" rel="noopener noreferrer">
+                        <div class="card-top">
+                            <div class="card-icon"><i class="fas fa-list-check"></i></div>
+                            <div class="card-arrow"><i class="fas fa-arrow-up-right-from-square"></i></div>
+                        </div>
+                        <h3 class="card-title">Task Management REST API (.NET)</h3>
+                        <p class="card-desc">Enterprise-style Task Management API with ASP.NET Core, Entity Framework Core, DTOs, services layer, and database migrations</p>
+                        <div class="card-footer">
+                            <span class="card-tag">Backend</span>
+                            <span class="card-tag">.NET</span>
+                            <span class="card-tag">C#</span>
+                        </div>
+                    </a>
+
+                    <!-- ═══════════════ IoT ═══════════════ -->
+
+                    <a class="project-card reveal" data-category="iot" href="https://github.com/Qata-Mo7ammad-Isma3el/D3aj-Buggy" target="_blank" rel="noopener noreferrer">
+                        <div class="card-top">
+                            <div class="card-icon"><i class="fas fa-robot"></i></div>
+                            <div class="card-arrow"><i class="fas fa-arrow-up-right-from-square"></i></div>
+                        </div>
+                        <h3 class="card-title">Mine Detection Robot</h3>
+                        <p class="card-desc">Autonomous buggy with metal detection sensors and robotic arm for safe landmine detection — Embedded Systems capstone project</p>
+                        <div class="card-footer">
+                            <span class="card-tag">IoT</span>
+                            <span class="card-tag">Robotics</span>
+                            <span class="card-tag">Arduino</span>
+                        </div>
+                    </a>
+
+                    <a class="project-card reveal" data-category="iot" href="https://github.com/Qata-Mo7ammad-Isma3el/Arduino-Codes" target="_blank" rel="noopener noreferrer">
+                        <div class="card-top">
+                            <div class="card-icon"><i class="fas fa-microchip"></i></div>
+                            <div class="card-arrow"><i class="fas fa-arrow-up-right-from-square"></i></div>
+                        </div>
+                        <h3 class="card-title">Arduino Components Library</h3>
+                        <p class="card-desc">Comprehensive library of 30+ Arduino sketches covering LEDs, sensors, servos, LCDs, Bluetooth modules, and a snake game</p>
+                        <div class="card-footer">
+                            <span class="card-tag">IoT</span>
+                            <span class="card-tag">Embedded</span>
+                        </div>
+                    </a>
+
+                    <!-- ═══════════════ DATA SCIENCE ═══════════════ -->
+
+                    <a class="project-card reveal" data-category="data-science" href="https://github.com/Qata-Mo7ammad-Isma3el/Hotel-Bookings-prediction" target="_blank" rel="noopener noreferrer">
+                        <div class="card-top">
+                            <div class="card-icon"><i class="fas fa-chart-line"></i></div>
+                            <div class="card-arrow"><i class="fas fa-arrow-up-right-from-square"></i></div>
+                        </div>
+                        <h3 class="card-title">Hotel Booking Cancellation Predictor</h3>
+                        <p class="card-desc">Exploratory data analysis and ML predictive modeling on hotel booking data to understand patterns and predict cancellations</p>
+                        <div class="card-footer">
+                            <span class="card-tag">Data Science</span>
+                            <span class="card-tag">ML</span>
+                        </div>
+                    </a>
+
+                    <a class="project-card reveal" data-category="data-science" href="https://github.com/Qata-Mo7ammad-Isma3el/SNA-project" target="_blank" rel="noopener noreferrer">
+                        <div class="card-top">
+                            <div class="card-icon"><i class="fas fa-diagram-project"></i></div>
+                            <div class="card-arrow"><i class="fas fa-arrow-up-right-from-square"></i></div>
+                        </div>
+                        <h3 class="card-title">Enron Email Social Network Analysis</h3>
+                        <p class="card-desc">Network analysis of the Enron email dataset (8,163 nodes, 33,695 edges) using Louvain community detection algorithm</p>
+                        <div class="card-footer">
+                            <span class="card-tag">Data Science</span>
+                            <span class="card-tag">Network Analysis</span>
+                        </div>
+                    </a>
+
+                    <a class="project-card reveal" data-category="data-science" href="https://github.com/Qata-Mo7ammad-Isma3el/DM-project" target="_blank" rel="noopener noreferrer">
+                        <div class="card-top">
+                            <div class="card-icon"><i class="fas fa-magnifying-glass-chart"></i></div>
+                            <div class="card-arrow"><i class="fas fa-arrow-up-right-from-square"></i></div>
+                        </div>
+                        <h3 class="card-title">Data Mining Analysis Project</h3>
+                        <p class="card-desc">University data mining project with comprehensive analysis using Python, Pandas, and various mining techniques on CSV datasets</p>
+                        <div class="card-footer">
+                            <span class="card-tag">Data Science</span>
+                            <span class="card-tag">Data Mining</span>
+                        </div>
+                    </a>
+
+                    <!-- ═══════════════ EDUCATION ═══════════════ -->
+
+                    <a class="project-card reveal" data-category="education" data-featured="true" href="https://github.com/Qata-Mo7ammad-Isma3el/IEEE-HU-SIGHT-n8n-Course" target="_blank" rel="noopener noreferrer">
+                        <div class="card-top">
+                            <div class="card-icon"><i class="fas fa-gears"></i></div>
+                            <div class="card-arrow"><i class="fas fa-arrow-up-right-from-square"></i></div>
+                        </div>
+                        <h3 class="card-title">n8n Automation & AI Workflows Course</h3>
+                        <p class="card-desc">20-hour, 4-session hands-on course covering automation fundamentals through AI-powered workflows, RAG systems, and MCP integrations</p>
+                        <div class="card-footer">
+                            <span class="card-tag">Education</span>
+                            <span class="card-tag">n8n</span>
+                            <span class="card-tag">AI</span>
+                        </div>
+                    </a>
+
+                    <a class="project-card reveal" data-category="education" href="https://github.com/Qata-Mo7ammad-Isma3el/AI-modelthon-2025" target="_blank" rel="noopener noreferrer">
+                        <div class="card-top">
+                            <div class="card-icon"><i class="fas fa-trophy"></i></div>
+                            <div class="card-arrow"><i class="fas fa-arrow-up-right-from-square"></i></div>
+                        </div>
+                        <h3 class="card-title">Data Preprocessing Workshop (IEEE Modelthon)</h3>
+                        <p class="card-desc">IEEE Jordan Modelthon workshop materials: scikit-learn Pipelines, ColumnTransformer, encoding, scaling, and end-to-end ML pipelines</p>
+                        <div class="card-footer">
+                            <span class="card-tag">Education</span>
+                            <span class="card-tag">AI/ML</span>
+                            <span class="card-tag">Workshop</span>
+                        </div>
+                    </a>
+
+                    <div class="project-card reveal" data-category="education">
+                        <div class="card-top">
+                            <div class="card-icon"><i class="fas fa-lightbulb"></i></div>
+                        </div>
+                        <h3 class="card-title">AI Tools & Prompt Engineering Course</h3>
+                        <p class="card-desc">24-hour course on AI tools, prompt engineering, GPT interaction, AI video production, presentations, and image generation</p>
+                        <div class="card-footer">
+                            <span class="card-tag">Education</span>
+                            <span class="card-tag">AI</span>
+                            <span class="card-tag">Prompt Engineering</span>
+                        </div>
+                    </div>
+
+                    <a class="project-card reveal" data-category="education" href="https://github.com/Qata-Mo7ammad-Isma3el/Arduino-Course-Content" target="_blank" rel="noopener noreferrer">
+                        <div class="card-top">
+                            <div class="card-icon"><i class="fas fa-book-open"></i></div>
+                            <div class="card-arrow"><i class="fas fa-arrow-up-right-from-square"></i></div>
+                        </div>
+                        <h3 class="card-title">Arduino 99 — Training Series</h3>
+                        <p class="card-desc">12-hour, 6-workshop Arduino training for 500+ participants under IEEE RAS — from foundations to building a mobile robot capstone</p>
+                        <div class="card-footer">
+                            <span class="card-tag">Education</span>
+                            <span class="card-tag">IoT</span>
+                            <span class="card-tag">IEEE</span>
+                        </div>
+                    </a>
+
+                    <a class="project-card reveal" data-category="education" href="https://github.com/Qata-Mo7ammad-Isma3el/My-FastAPI-Documentation" target="_blank" rel="noopener noreferrer">
+                        <div class="card-top">
+                            <div class="card-icon"><i class="fas fa-bolt"></i></div>
+                            <div class="card-arrow"><i class="fas fa-arrow-up-right-from-square"></i></div>
+                        </div>
+                        <h3 class="card-title">FastAPI Complete Documentation Guide</h3>
+                        <p class="card-desc">Comprehensive follow-along of all 38+ official FastAPI topics — from path parameters through security, middleware, CORS, and databases</p>
+                        <div class="card-footer">
+                            <span class="card-tag">Education</span>
+                            <span class="card-tag">FastAPI</span>
+                            <span class="card-tag">Backend</span>
+                        </div>
+                    </a>
+
+                    <a class="project-card reveal" data-category="education" href="https://github.com/Qata-Mo7ammad-Isma3el/Docker-course" target="_blank" rel="noopener noreferrer">
+                        <div class="card-top">
+                            <div class="card-icon"><i class="fab fa-docker"></i></div>
+                            <div class="card-arrow"><i class="fas fa-arrow-up-right-from-square"></i></div>
+                        </div>
+                        <h3 class="card-title">Docker Comprehensive Guide</h3>
+                        <p class="card-desc">Learning notes covering Docker vs VMs, Dockerfiles, Docker Compose, volumes, networking, and practical deployment examples</p>
+                        <div class="card-footer">
+                            <span class="card-tag">Education</span>
+                            <span class="card-tag">DevOps</span>
+                            <span class="card-tag">Docker</span>
+                        </div>
+                    </a>
+
+                    <a class="project-card reveal" data-category="education" href="https://github.com/Qata-Mo7ammad-Isma3el/Python-OOP" target="_blank" rel="noopener noreferrer">
+                        <div class="card-top">
+                            <div class="card-icon"><i class="fab fa-python"></i></div>
+                            <div class="card-arrow"><i class="fas fa-arrow-up-right-from-square"></i></div>
+                        </div>
+                        <h3 class="card-title">Python OOP Comprehensive Guide</h3>
+                        <p class="card-desc">6 interactive Jupyter notebooks: Classes & Objects, Inheritance, Polymorphism, Encapsulation, Data Abstraction, and Operator Overloading</p>
+                        <div class="card-footer">
+                            <span class="card-tag">Education</span>
+                            <span class="card-tag">Python</span>
+                        </div>
+                    </a>
+
+                    <a class="project-card reveal" data-category="education" href="https://github.com/Qata-Mo7ammad-Isma3el/python-data-science-notes" target="_blank" rel="noopener noreferrer">
+                        <div class="card-top">
+                            <div class="card-icon"><i class="fas fa-book"></i></div>
+                            <div class="card-arrow"><i class="fas fa-arrow-up-right-from-square"></i></div>
+                        </div>
+                        <h3 class="card-title">Python Data Science Handbook Notes</h3>
+                        <p class="card-desc">Study notes from Jake VanderPlas's handbook — NumPy arrays, Pandas DataFrames, Matplotlib visualizations, and Seaborn styling</p>
+                        <div class="card-footer">
+                            <span class="card-tag">Education</span>
+                            <span class="card-tag">Data Science</span>
+                        </div>
+                    </a>
+
+                    <a class="project-card reveal" data-category="education" href="https://github.com/Qata-Mo7ammad-Isma3el/My-Postgres" target="_blank" rel="noopener noreferrer">
+                        <div class="card-top">
+                            <div class="card-icon"><i class="fas fa-database"></i></div>
+                            <div class="card-arrow"><i class="fas fa-arrow-up-right-from-square"></i></div>
+                        </div>
+                        <h3 class="card-title">PostgreSQL Learning Guide</h3>
+                        <p class="card-desc">Tutorials covering basics through advanced SQL — joins, subqueries, CASE expressions, GROUP BY, and demo database design</p>
+                        <div class="card-footer">
+                            <span class="card-tag">Education</span>
+                            <span class="card-tag">Database</span>
+                            <span class="card-tag">SQL</span>
+                        </div>
+                    </a>
+
+                    <a class="project-card reveal" data-category="education" href="https://github.com/Qata-Mo7ammad-Isma3el/Git-Github" target="_blank" rel="noopener noreferrer">
+                        <div class="card-top">
+                            <div class="card-icon"><i class="fab fa-git-alt"></i></div>
+                            <div class="card-arrow"><i class="fas fa-arrow-up-right-from-square"></i></div>
+                        </div>
+                        <h3 class="card-title">Git & GitHub Reference Guide</h3>
+                        <p class="card-desc">Essential terminal commands, Git concepts, branching strategies, SSH setup, and version control workflow diagrams</p>
+                        <div class="card-footer">
+                            <span class="card-tag">Education</span>
+                            <span class="card-tag">DevOps</span>
+                            <span class="card-tag">Git</span>
+                        </div>
+                    </a>
+
+                    <a class="project-card reveal" data-category="education" href="https://github.com/Qata-Mo7ammad-Isma3el/introduction-to-unix" target="_blank" rel="noopener noreferrer">
+                        <div class="card-top">
+                            <div class="card-icon"><i class="fas fa-terminal"></i></div>
+                            <div class="card-arrow"><i class="fas fa-arrow-up-right-from-square"></i></div>
+                        </div>
+                        <h3 class="card-title">Introduction to Unix</h3>
+                        <p class="card-desc">Course summaries covering Unix navigation, file management, permissions, redirection, pipes, and environment variables</p>
+                        <div class="card-footer">
+                            <span class="card-tag">Education</span>
+                            <span class="card-tag">Systems</span>
+                        </div>
+                    </a>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section class="contact" id="contact">
+            <div class="section-container">
+                <div class="section-header reveal">
+                    <span class="section-number">04</span>
+                    <h2 class="section-title">Contact<span class="accent">.</span></h2>
+                    <p class="section-subtitle">Have a project in mind? Let's build something great together.</p>
+                </div>
+                <div class="contact-grid">
+                    <div class="contact-info reveal">
+                        <div class="contact-card">
+                            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                            <div>
                                 <h4>Email</h4>
-                                <a href="mailto:imoh40398@gmail.com">imoh40398@gmail.com</a>
+                                <a href="mailto:moh40398@gmail.com">moh40398@gmail.com</a>
                             </div>
                         </div>
-                        <div class="contact-method">
-                            <div class="method-icon">
-                                <i class="fas fa-phone"></i>
-                            </div>
-                            <div class="method-details">
+                        <div class="contact-card">
+                            <div class="contact-icon"><i class="fas fa-phone"></i></div>
+                            <div>
                                 <h4>Phone</h4>
                                 <a href="tel:+962787499976">+962 787 499 976</a>
                             </div>
                         </div>
-                        <div class="contact-method">
-                            <div class="method-icon">
-                                <i class="fas fa-map-marker-alt"></i>
-                            </div>
-                            <div class="method-details">
+                        <div class="contact-card">
+                            <div class="contact-icon"><i class="fas fa-location-dot"></i></div>
+                            <div>
                                 <h4>Location</h4>
                                 <p>Amman, Jordan</p>
                             </div>
                         </div>
-                    </div>
-                    
-                    <div class="social-connect">
-                        <h4>Connect with me</h4>
-                        <div class="social-links-grid">
-                            <a href="https://github.com/Qata-Mo7ammad-Isma3el" target="_blank" rel="noopener noreferrer" class="social-link-item">
-                                <i class="fab fa-github"></i>
-                            </a>
-                            <a href="https://www.linkedin.com/in/mohammad-ismail-11719a260/" target="_blank" rel="noopener noreferrer" class="social-link-item">
-                                <i class="fab fa-linkedin"></i>
-                            </a>
-                            <a href="https://www.facebook.com/share/1B1XUnyLtU/" target="_blank" rel="noopener noreferrer" class="social-link-item">
-                                <i class="fab fa-facebook"></i>
-                            </a>
-                            <a href="https://www.instagram.com/mo7amad_isma3el" target="_blank" rel="noopener noreferrer" class="social-link-item">
-                                <i class="fab fa-instagram"></i>
-                            </a>
+                        <div class="contact-socials">
+                            <a href="https://github.com/Qata-Mo7ammad-Isma3el" target="_blank" rel="noopener noreferrer" class="social-btn"><i class="fab fa-github"></i></a>
+                            <a href="https://www.linkedin.com/in/mohammad-ismail-11719a260/" target="_blank" rel="noopener noreferrer" class="social-btn"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="https://www.facebook.com/share/1B1XUnyLtU/" target="_blank" rel="noopener noreferrer" class="social-btn"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://www.instagram.com/mo7amad_isma3el" target="_blank" rel="noopener noreferrer" class="social-btn"><i class="fab fa-instagram"></i></a>
                         </div>
                     </div>
+                    <form action="https://formspree.io/f/mqadvynw" class="contact-form reveal" method="POST">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Name <span class="required">*</span></label>
+                                <input type="text" id="name" name="name" placeholder="Your name" required />
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email <span class="required">*</span></label>
+                                <input type="email" id="email" name="email" placeholder="you@email.com" required />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" placeholder="Project inquiry" />
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message <span class="required">*</span></label>
+                            <textarea id="message" name="message" placeholder="Tell me about your project..." rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">
+                            <span>Send Message</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
                 </div>
-                
-                <form action="https://formspree.io/f/mqadvynw" class="contact-form" method="POST">
-                    <h3>Send a Message</h3>
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label for="name">Full Name <span class="required">*</span></label>
-                            <input type="text" id="name" name="name" placeholder="Your name" required />
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Email Address <span class="required">*</span></label>
-                            <input type="email" id="email" name="email" placeholder="your.email@example.com" required />
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label for="subject">Subject</label>
-                        <input type="text" id="subject" name="subject" placeholder="What's this about?" />
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Message <span class="required">*</span></label>
-                        <textarea id="message" name="message" placeholder="Tell me about your project or inquiry..." rows="6" required></textarea>
-                    </div>
-                    <button type="submit" class="submit-btn">
-                        <span>Send Message</span>
-                        <i class="fas fa-paper-plane"></i>
-                    </button>
-                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-inner">
+            <div class="footer-brand">
+                <span class="footer-logo">M<span class="accent">.</span>I</span>
+                <p>AI Engineer &bull; Backend Developer &bull; Automation Specialist</p>
+            </div>
+            <div class="footer-links">
+                <a href="#hero">Home</a>
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Mohammad Ismail. Built with precision.</p>
             </div>
         </div>
-        
-        <div class="footer-section">
-            <footer class="main-footer">
-                <div class="footer-content">
-                    <div class="footer-brand">
-                        <h3>Mohammad Ismail</h3>
-                        <p>AI Engineer | Backend Developer | Automation Specialist</p>
-                        <p class="footer-tech">Python • FastAPI • n8n • LangChain • LangGraph</p>
-                    </div>
-                    <div class="footer-links-section">
-                        <div class="footer-nav">
-                            <h4>Quick Links</h4>
-                            <a href="#home">Home</a>
-                            <a href="#projects">Projects</a>
-                            <a href="#contact">Contact</a>
-                        </div>
-                        <div class="footer-social">
-                            <h4>Connect</h4>
-                            <a href="https://github.com/Qata-Mo7ammad-Isma3el" target="_blank" rel="noopener noreferrer">GitHub</a>
-                            <a href="https://www.linkedin.com/in/mohammad-ismail-11719a260/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-                            <a href="mailto:imoh40398@gmail.com">Email</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="footer-bottom">
-                    <p>© 2025 Mohammad Ismail • All rights reserved</p>
-                </div>
-            </footer>
-        </div>
-    </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
     <script src="script.js"></script>
 </body>
-
 </html>
